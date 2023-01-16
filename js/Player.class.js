@@ -12,6 +12,11 @@ export class Player {
     changeArrayPosition(i,j) {
         this.matrizPosition[i][j] = true;
     }
+    EmptyFunction() {
+        for(var i=0; i<6; i++) {
+            this.matrizPosition[i] = new Array(7);
+        }
+    }
     changerTurno(turn) {
         this.turno = turn;
     }
